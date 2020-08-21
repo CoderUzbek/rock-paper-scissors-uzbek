@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap");
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #24272E;
+}
+
+header {
+    background: white;
+    color: #25272E;
+    font-family: Asap, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+#score-board {
+    color: white;
+    border: solid 3px white;
+    border-radius: 4px;
+    font-family: Asap, sans-serif;
+    font-size: 46px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    position: relative;
+    text-align: center;
+    width: 200px;
+}
+
+.badge {
+    color: white;
+    background: #E2584D;
+    font-family: ASap, sans-serif;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+
+#usr {
+    left: -25px;
+    position: absolute;
+    top: 30px;
+}
+
+#comp {
+    right: -25px;
+    position: absolute;
+    top: 30px;
+}
+
+#result {
+    color: white;
+    font-family: Asap, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#choices {
+    text-align: center;
+}
+
+.choice {
+    border: solid 4px white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 50px 20px 20px;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.choice:hover {
+    background: #30272E;
+    cursor: pointer;
+}
+
+#action-msg {
+    color: white;
+    font-family: Asap, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+:root {
+    --border-color: white;
+    --shadow-color: white;
+}
+
+
+.green-glow {
+    --border-color: #4DCC7d;
+    --shadow-color: #31B43A;
+    animation-name: glow;
+    animation-duration: 2s;
+}
+
+.red-glow {
+    --border-color: #FC121B;
+    --shadow-color: #D01115;
+    animation-name: glow;
+    animation-duration: 2s;
+}
+
+.gray-glow {
+    --border-color: #464627;
+    --shadow-color: #25292B;
+    animation-name: glow;
+    animation-duration: 2s;
+}
+
+@keyframes glow {
+    from {
+        border: solid 4px var(--border-color);
+        box-shadow: 0 0 10px var(--shadow-color);
+    }
+
+    to {
+        border: solid 4px white;
+        box-shadow: 0 0 0px white;
+    }
+}
