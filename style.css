@@ -126,6 +126,7 @@ header {
     animation-duration: 2s;
 }
 
+
 @keyframes glow {
     from {
         border: solid 4px var(--border-color);
