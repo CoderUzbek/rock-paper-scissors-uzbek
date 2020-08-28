@@ -78,6 +78,19 @@ header {
     cursor: pointer;
 }
 
+
+@media (max-width: 576px) {
+    .choice img {
+        height: 40px;
+        width: 40px;
+    }
+
+    #result {
+        font-size: 20px;
+    }
+}
+
+
 #action-msg {
     color: white;
     font-family: Asap, sans-serif;
